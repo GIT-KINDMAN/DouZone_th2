@@ -1,5 +1,29 @@
 https://docs.oracle.com/javase/8/docs/api/ >> java 8 API
+
 final == 상속(extends) 금지
 static == 값 변경 금지
 overloading == 매개변수
 overriding == 재정의
+
+// 메모리 (각 생존, 유효 범위)
+[=====|=====|=====]
+static Heap  Stack
+
+static: 상수, Static 변수 할당 범위
+Heap: 동적 메모리 할당
+Stack: 변수 할당
+
+Heap:
+C/C++ 할당(malloc) 해제(free)
+Java 할당(new) 해제(close) // 다만 해제는 close 안해도 GC가 알아서 해줌
+서버 등의 경우 오래된 순서대로 없어지는게 맞음 (이거 운영체제나 마프때 배운거 생각하면 될 듯)
+
+Stack:
+python 빼고는 변수는 {} 사이에서만 생존 (local 변수 얘기인 듯?)
+
+자동형변환 설명함
+
+힙영역에 자료가 있는게 안정감이 있다? 동적이라서?
+
+AutoBoxing/UnBoxing (Heap<-Stack 형변환: Boxing) (Heap->Stack 형변환: UnBoxing)
+-> call of value 스택, call of reference 힙
