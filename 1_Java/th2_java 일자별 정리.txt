@@ -12,9 +12,9 @@
  > jdk 8 download  
   https://www.oracle.com/java/technologies/downloads/#java8
 
- 1) JDK ¼³Ä¡ ¹× ½ÇÇà
- 2) °£´Ü ÇÁ·Î±×·¥ ÀÛ¼º
-   - ¸Ş¸ğÀå
+ 1) JDK ì„¤ì¹˜ ë° ì‹¤í–‰
+ 2) ê°„ë‹¨ í”„ë¡œê·¸ë¨ ì‘ì„±
+   - ë©”ëª¨ì¥
 
  > eclipse  : Eclipse IDE 2020-06 R Packages
 
@@ -26,54 +26,54 @@ class ClassName {
 	}
 }
 
- > Ãâ·Â ÇÔ¼ö 
- print()  - °³Çà¾øÀÌ Ãâ·Â 
- printf() - ¼­½Ä¿¡ ¸ÂÃç¼­ Ãâ·Â
- println() - Ãâ·Â ¹× °³Çà 
+ > ì¶œë ¥ í•¨ìˆ˜ 
+ print()  - ê°œí–‰ì—†ì´ ì¶œë ¥ 
+ printf() - ì„œì‹ì— ë§ì¶°ì„œ ì¶œë ¥
+ println() - ì¶œë ¥ ë° ê°œí–‰ 
 
-¹®Á¦] Info.java ÆÄÀÏ¿¡ ÀÚ½ÅÀÇ Á¤º¸ Ãâ·ÂÇÏ±â - ÀÌ¸§, ¿¬¶ôÃ³, ÁÖ¼Ò 
+ë¬¸ì œ] Info.java íŒŒì¼ì— ìì‹ ì˜ ì •ë³´ ì¶œë ¥í•˜ê¸° - ì´ë¦„, ì—°ë½ì²˜, ì£¼ì†Œ 
 
 ----------------------------------------------------
-Á¢±ÙÁöÁ¤ÀÚ  Å¬·¡½º   Å¬·¡½º¸í
-public     class     Hello    {  //½ÃÀÛºí·°
+ì ‘ê·¼ì§€ì •ì  í´ë˜ìŠ¤   í´ë˜ìŠ¤ëª…
+public     class     Hello    {  //ì‹œì‘ë¸”ëŸ­
 
-	public static void main(String[] args) {  //½ÃÀÛÁ¡(ÁøÀÔÁ¡)
+	public static void main(String[] args) {  //ì‹œì‘ì (ì§„ì…ì )
 
-		System.out.print("Hello Java!!!"); // ¹®ÀÚ¿­µ¥ÀÌÅÍ
-		System.out.print(100);  //Á¤¼öµ¥ÀÌÅÍ
-		System.out.print(12.345);  //½Ç¼öµ¥ÀÌÅÍ
+		System.out.print("Hello Java!!!"); // ë¬¸ìì—´ë°ì´í„°
+		System.out.print(100);  //ì •ìˆ˜ë°ì´í„°
+		System.out.print(12.345);  //ì‹¤ìˆ˜ë°ì´í„°
 
 	} // end main
 
-}  // ³¡ºí·°,  end class
+}  // ëë¸”ëŸ­,  end class
 ------------------------------------------------------
 
- > ÄÄÆÄÀÏ - javac ÆÄÀÏ¸í.È®ÀåÀÚ(java)
+ > ì»´íŒŒì¼ - javac íŒŒì¼ëª….í™•ì¥ì(java)
  D:\DouZone_th2\1_Java\workspace> javac Hello.java
  
- > ½ÇÇà - java ÆÄÀÏ¸í (.class »ı·«ÇÑ´Ù) 
+ > ì‹¤í–‰ - java íŒŒì¼ëª… (.class ìƒëµí•œë‹¤) 
  D:\DouZone_th2\1_Java\workspace> java Hello
 	
-   - ÀÌÅ¬¸³½º 
+   - ì´í´ë¦½ìŠ¤ 
   
-  JDK : java °³¹ß + ½ÇÇà
-  JRE : java·Î ¸¸µé¾îÁø ÇÁ·Î±×·¥À» ½ÇÇà 
+  JDK : java ê°œë°œ + ì‹¤í–‰
+  JRE : javaë¡œ ë§Œë“¤ì–´ì§„ í”„ë¡œê·¸ë¨ì„ ì‹¤í–‰ 
  
- 3) È¯°æº¯¼ö ¼³Á¤
-   °¡) JAVA_HOME
+ 3) í™˜ê²½ë³€ìˆ˜ ì„¤ì •
+   ê°€) JAVA_HOME
        C:\Program Files\Java\jdk1.8.0_321
 
        CLASSPATH
        .;
 
-   ³ª) Path ¼öÁ¤(ÆíÁı) 
+   ë‚˜) Path ìˆ˜ì •(í¸ì§‘) 
       ~~~~;%JAVA_HOME%\bin;
 
-  ÄÄÆÄÀÏ - °í±Ş¾î¸¦ ±â°è¾î·Î º¯È¯ÇØÁØ´Ù.
+  ì»´íŒŒì¼ - ê³ ê¸‰ì–´ë¥¼ ê¸°ê³„ì–´ë¡œ ë³€í™˜í•´ì¤€ë‹¤.
 
-*** À¯¿ëÇÑ »çÀÌÆ® ****
+*** ìœ ìš©í•œ ì‚¬ì´íŠ¸ ****
 
- > Àü»ê¿ë¾î
+ > ì „ì‚°ìš©ì–´
  http://www.terms.co.kr/
  https://ko.wikipedia.org
 
@@ -81,31 +81,31 @@ public     class     Hello    {  //½ÃÀÛºí·°
 
  https://www.codeproject.com
 
- > µ¿¿µ»ó °­ÁÂ & ¹®Á¦ ÀºÇà
+ > ë™ì˜ìƒ ê°•ì¢Œ & ë¬¸ì œ ì€í–‰
  https://cafe.naver.com/thisisjava
  https://cafe.naver.com/javachobostudy
  https://www.orentec.co.kr/
- ½ÅÀÔSWÀÎ·ÂÀ» À§ÇÑ ½ÇÀü ÀÚ¹Ù(Java)
+ ì‹ ì…SWì¸ë ¥ì„ ìœ„í•œ ì‹¤ì „ ìë°”(Java)
 https://www.youtube.com/playlist?list=PLieE0qnqO2kTyzAlsvxzoulHVISvO8zA9
  https://www.opentutorials.org/course/1223
  http://www.easyspub.co.kr/50_Menu/VideoView/534/PUB#view
 
 
- > ÀÚ°İÁõ
+ > ìê²©ì¦
    ocjp
-   Á¤º¸Ã³¸® ±â»ç(»ê¾÷±â»ç)
+   ì •ë³´ì²˜ë¦¬ ê¸°ì‚¬(ì‚°ì—…ê¸°ì‚¬)
 
- > ¾Ë°í¸®Áò
+ > ì•Œê³ ë¦¬ì¦˜
  https://www.acmicpc.net
 
 
 
 
->> °­»çÄÄ Á¢¼Ó
+>> ê°•ì‚¬ì»´ ì ‘ì†
 
 
 ---------------------------------------------------
->> ÀÌµµ¿¬(¿µÈñ)
+>> ì´ë„ì—°(ì˜í¬)
  ai.edu.kingsmile@gmail.com
  happydoyeon88@gmail.com
  010-9872-0202
