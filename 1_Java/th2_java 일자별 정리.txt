@@ -1,0 +1,112 @@
+
+
+ 
+ > id / pwd
+  douzone / th2
+  java / java 
+
+===================================
+>> day02 -  22/01/25
+
+
+ > jdk 8 download  
+  https://www.oracle.com/java/technologies/downloads/#java8
+
+ 1) JDK 설치 및 실행
+ 2) 간단 프로그램 작성
+   - 메모장
+
+ > eclipse  : Eclipse IDE 2020-06 R Packages
+
+class ClassName {
+
+	pubulic static void main(String[] args) {
+		
+		System.out.print("contents");
+	}
+}
+
+ > 출력 함수 
+ print()  - 개행없이 출력 
+ printf() - 서식에 맞춰서 출력
+ println() - 출력 및 개행 
+
+문제] Info.java 파일에 자신의 정보 출력하기 - 이름, 연락처, 주소 
+
+----------------------------------------------------
+접근지정자  클래스   클래스명
+public     class     Hello    {  //시작블럭
+
+	public static void main(String[] args) {  //시작점(진입점)
+
+		System.out.print("Hello Java!!!"); // 문자열데이터
+		System.out.print(100);  //정수데이터
+		System.out.print(12.345);  //실수데이터
+
+	} // end main
+
+}  // 끝블럭,  end class
+------------------------------------------------------
+
+ > 컴파일 - javac 파일명.확장자(java)
+ D:\DouZone_th2\1_Java\workspace> javac Hello.java
+ 
+ > 실행 - java 파일명 (.class 생략한다) 
+ D:\DouZone_th2\1_Java\workspace> java Hello
+	
+   - 이클립스 
+  
+  JDK : java 개발 + 실행
+  JRE : java로 만들어진 프로그램을 실행 
+ 
+ 3) 환경변수 설정
+   가) JAVA_HOME
+       C:\Program Files\Java\jdk1.8.0_321
+
+       CLASSPATH
+       .;
+
+   나) Path 수정(편집) 
+      ~~~~;%JAVA_HOME%\bin;
+
+  컴파일 - 고급어를 기계어로 변환해준다.
+
+*** 유용한 사이트 ****
+
+ > 전산용어
+ http://www.terms.co.kr/
+ https://ko.wikipedia.org
+
+ http://www.etnews.com/
+
+ https://www.codeproject.com
+
+ > 동영상 강좌 & 문제 은행
+ https://cafe.naver.com/thisisjava
+ https://cafe.naver.com/javachobostudy
+ https://www.orentec.co.kr/
+ 신입SW인력을 위한 실전 자바(Java)
+https://www.youtube.com/playlist?list=PLieE0qnqO2kTyzAlsvxzoulHVISvO8zA9
+ https://www.opentutorials.org/course/1223
+ http://www.easyspub.co.kr/50_Menu/VideoView/534/PUB#view
+
+
+ > 자격증
+   ocjp
+   정보처리 기사(산업기사)
+
+ > 알고리즘
+ https://www.acmicpc.net
+
+
+
+
+>> 강사컴 접속
+
+
+---------------------------------------------------
+>> 이도연(영희)
+ ai.edu.kingsmile@gmail.com
+ happydoyeon88@gmail.com
+ 010-9872-0202
+
