@@ -1,4 +1,5 @@
+https://docs.oracle.com/javase/8/docs/api/ >> java 8 API
 final == 상속(extends) 금지
 static == 값 변경 금지
-
-https://docs.oracle.com/javase/8/docs/api/ >> java 8 API
+overloading == 매개변수
+overriding == 재정의
