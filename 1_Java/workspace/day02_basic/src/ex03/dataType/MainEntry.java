@@ -2,7 +2,22 @@ package ex03.dataType;
 
 public class MainEntry {
     public static void main(String[] args) {
+         int su = 10;
+         System.out.printf("2진수: %b\n",su);
+         System.out.printf("10진수: %d\n",su);
+         System.out.printf("8진수: %o\n",su);
+         System.out.printf("16진수: %x %X \n",su,su); // %x: 소문자, %X: 대문자
          
+         System.out.printf("\n\n%d %x %o %X \n",10,10,10,10); 
+
+         //0숫자-> 8진수, 0x숫자 -> 16진수
+         System.out.printf("%d \n", 012); // 10
+         System.out.printf("%d \n", 0xA); // 10
+
+         double f = 12.34;
+         System.out.println(f);
+         float ff = 12.34f;
+         System.out.println(ff);
     }
 }
 
