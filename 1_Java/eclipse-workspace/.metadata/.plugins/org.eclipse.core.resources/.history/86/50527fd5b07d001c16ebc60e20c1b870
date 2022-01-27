@@ -1,0 +1,23 @@
+package ex02.dataType;
+
+public class MainEntry {
+
+	static int NUM;
+	static String str;
+	
+	public static void main(String[] args) {
+		boolean b = true;
+		int x = 30;
+		int y = 500; // 지역변수는 초기화 필수
+		int su = 99;
+		
+		System.out.println(x+", "+y+", "+su);
+		System.out.println(str);
+		System.out.println(NUM);
+		System.out.println(y);
+		System.out.println(x); // 4byte
+		System.out.println(b); // 1bit
+
+	}
+
+}
