@@ -1,0 +1,25 @@
+1. 비교문
+if ~ else
+
+if(조건) else
+중첩 if (if문 내의 if문)
+
+2. 선택문
+switch ~ case
+
+3. 반복문
+for, 확장 for문 (특히, JDK 5.0의 for each)
+시작과 끝이 명확한 정확한 값을 가지고 숫자 관련 기능을 수행할 때 사용
+
+while
+do~while
+행위적인 것 (마우스 움직임 감지 등)에 사용
+
+4. 기타구문
+break // 
+continue // 
+
+> Exception (예외처리)
+
+>배열
+>함수
