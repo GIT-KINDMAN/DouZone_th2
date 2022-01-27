@@ -1,13 +1,95 @@
+>> day04 -  22/01/27
+
+ > import / export 방법
+
+ > 제어문
+1. 비교문
+ if ~ else
+
+ 문제1] 이름, 점수 3개(국어,영어,전산) 
+   총점, 평균 , 학점(평점) 구하는 프로그램 작성
+
+ 문제2] 윤년/평년 판정 프로그램 작성
+   if( year % 4 == 0 ) 
+	if( year % 100 != 0) || if( year % 400 == 0)
+		"윤년" 
+ 문제3] 전산,영어,국어 점수 입력 받아서 평균 60점이상이고,
+     각 과목 과락 40점이하면 과목 불합격 처리하는 프로그램 작성
+
+ 과제] 논리연산, 교환알고리즘, if 이용 
+ 3
+ 4
+ 5
+
+  5 > 4 > 3  큰 순으로 출력하는 프로그램 작성
+내일까지하시면 됩니다.^^
+ ai.edu.kingsmile@gmail.com 으로 제출
+
+2. 선택문
+ switch ~ case
+
+3. 반복문
+ for, 확장for문
+ while
+ do~while
+
+4. 기타구문
+ break
+ continue
+
+ > Exception (예외처리)
+   Java는 의무적(반드시)으로 예외처리를 해야하는 상황들이 있음.
+    -- 네트워크, 데이터베이스(JDBC), Thread, IO(입출력), File,..
+
+   1) try ~ catch : 직접처리 - 권장
+   2) throws : 위임
+   3) throw : 예외 던지기 
+
+ > 함수
+ > 배열
+
+ - 질문? 알고리즘 과제에대한 처리  (주말/연휴)
+
+================================================
+>> day03 -  22/01/26
+
+ - 2,4,6 팀 내일 오시자마자 자리 셋팅 끝나 있어야함. ( JDK , Eclipse )
+
+ > 자료형 마무리
+ > 연산자  - 우선순위 있음
+    최단산쉬관논삼대콤
+ 높 <---	      ---> 낮  
+
+ > 입력받기
+ java.io <---- Input / Output
+ java.util <---- Scanner 
+    cf) main
+
+   nextXXX()
+        자료형
+   nextInt()
+   nextFloat()
+   nextDouble()
+   next() vs nextLine()  <--- String input method
+
+ result>
+  이도연님의 성적표 *****
+  국어 : 100, 영어: 100, 전산 : 100
+  총점 : 300, 평균: 100.00 
 
 
  
- > id / pwd
-  douzone / th2
-  java / java 
+문제2] int su = 123456;
+
+  시 : 분 : 초 
+        60초 => 1분
+  60분 
+      60초 ==> 3600
+
+  34시 17분 36초
 
 ===================================
 >> day02 -  22/01/25
-
 
  > jdk 8 download  
   https://www.oracle.com/java/technologies/downloads/#java8
@@ -69,15 +151,30 @@ public     class     Hello    {  //시작블럭
    나) Path 수정(편집) 
       ~~~~;%JAVA_HOME%\bin;
 
+ cmd> java -version 으로 확인해보심 됩니다.
+
+D:\DouZone_th2\1_Java\workspace>javac Hello.java
+
   컴파일 - 고급어를 기계어로 변환해준다.
+
+D:\DouZone_th2\1_Java\workspace>java Hello
+
+ - 한글 포함 되어 에러 발생시 해결 방법
+  D:\DouZone_th2\1_Java\workspace>javac -encoding utf-8 Hello.java
+
+  > Data Type (자료형) 
+   - 기본자료형
+   - 참조형
+
+
 
 *** 유용한 사이트 ****
 
  > 전산용어
- http://www.terms.co.kr/
+ http://www.terms.co.kr
  https://ko.wikipedia.org
 
- http://www.etnews.com/
+ http://www.etnews.com
 
  https://www.codeproject.com
 
@@ -97,16 +194,20 @@ https://www.youtube.com/playlist?list=PLieE0qnqO2kTyzAlsvxzoulHVISvO8zA9
 
  > 알고리즘
  https://www.acmicpc.net
+https://programmers.co.kr
 
 
 
 
 >> 강사컴 접속
+http://192.168.2.21/DouZone_th2
+\\desktop-L2f7Lsg
 
+ > id / pwd
+  douzone / th2
+  java / java 
 
 ---------------------------------------------------
 >> 이도연(영희)
  ai.edu.kingsmile@gmail.com
- happydoyeon88@gmail.com
  010-9872-0202
-
