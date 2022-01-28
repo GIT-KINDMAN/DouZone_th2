@@ -33,7 +33,7 @@ public class Homework_Student_이동훈 {
 
         for (int i = 0; i < N; i++) {
 
-            System.out.print((i+1) + "번 학생\n이름: ");
+            System.out.print((i + 1) + "번 학생\n이름: ");
             String name = sc.next();
 
             int kor = 0;
@@ -89,7 +89,7 @@ public class Homework_Student_이동훈 {
     }
 
     private static void printRank(Student[] std) {
-        System.out.println("[전체 석차]");
+        System.out.println("[석차]");
         for (int i = 0; i < std.length; i++) {
             System.out.printf(i + 1 + "등: " + std[i].name + ", %.2f 점\n", std[i].avg);
         }
@@ -131,7 +131,7 @@ public class Homework_Student_이동훈 {
 
     private static void printMember(Student std) {
         System.out
-                .println("[성적표]\n이름: " + std.name + ", 국어점수: " + std.kor + ", 영어점수: " + std.eng + ", 전산점수: " + std.com);
-        System.out.printf("평균점수: %.2f\n", (float) (std.kor + std.eng + std.com) / 3);
+                .printf("[성적표]\n이름: " + std.name + ", 국어점수: " + std.kor + ", 영어점수: " + std.eng + ", 전산점수: " + std.com
+                        + "\n평균점수: %.2f\n", (float) (std.kor + std.eng + std.com) / 3);
     }
 }
