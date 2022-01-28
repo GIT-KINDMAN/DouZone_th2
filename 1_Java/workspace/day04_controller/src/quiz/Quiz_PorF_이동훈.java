@@ -21,7 +21,6 @@ public class Quiz_PorF_이동훈 {
     public static void main(String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);
-        
         String name = sc.nextLine();
         int kor = sc.nextInt();
         int eng = sc.nextInt();
