@@ -16,6 +16,11 @@ class Student implements Comparable<Student> {
         this.eng = eng;
         this.com = com;
     }
+
+    @Override
+    public int compareTo(Student std) {
+        return (int) (std.avg - this.avg);
+    }
 }
 
 public class Homework_Student_이동훈 {
@@ -80,6 +85,7 @@ public class Homework_Student_이동훈 {
 
     private static void studentSort(Student[] std) {
         Arrays.sort(std, new Comparator<Student>() {
+            @Override
             public int compare(Student std1, Student std2) {
                 float std1Avg = std1.avg;
                 float std2Avg = std2.avg;
