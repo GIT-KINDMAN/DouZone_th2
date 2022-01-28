@@ -1,18 +1,14 @@
-/**
- * (개선판 22.01.28)
- * 점수는 0~100점 사이만 입력 받기
- * y/n? 물어보고 y 입력시 입력값을 다시 받을 수 있도록 하기(while을 쓰던 do while을 쓰던 루프. n을 누르면 종료) *
- */
-package quiz;
-
 import java.util.Scanner;
+import java.util.Comparator;
+import java.util.Arrays;
 
-class Student {
+class Student implements Comparable<Student> {
 
     String name;
     int kor;
     int eng;
     int com;
+    float avg;
 
     public Student(String name, int kor, int eng, int com) {
         this.name = name;
@@ -22,18 +18,22 @@ class Student {
     }
 }
 
-public class Homework_Score_이동훈 {
+public class Homework_Student_이동훈 {
     public static void main(String[] args) throws Exception {
+        execute();
+    }
 
+    private static void execute() throws Exception {
         Scanner sc = new Scanner(System.in);
-        System.out.print("몇 명의 학생을 입력하시겠습니까?: ");
+        System.out.print("--------------------------------------------------------\n몇 명의 학생을 입력하시겠습니까?: ");
         int N = sc.nextInt();
+        System.out.println("--------------------------------------------------------");
 
         Student[] std = new Student[N];
 
         for (int i = 0; i < N; i++) {
 
-            System.out.print(i + 1 + "번 학생\n이름: ");
+            System.out.print((i+1) + "번 학생\n이름: ");
             String name = sc.next();
 
             int kor = 0;
@@ -61,6 +61,7 @@ public class Homework_Score_이동훈 {
             }
 
             std[i] = new Student(name, kor, eng, com);
+            std[i].avg = (float) (kor + eng + com) / 3;
 
             System.out.println("--------------------------------------------------------");
 
@@ -70,7 +71,28 @@ public class Homework_Score_이동훈 {
 
             System.out.println("========================================================");
         }
+
+        studentSort(std);
+        printRank(std);
+
         sc.close();
+    }
+
+    private static void studentSort(Student[] std) {
+        Arrays.sort(std, new Comparator<Student>() {
+            public int compare(Student std1, Student std2) {
+                float std1Avg = std1.avg;
+                float std2Avg = std2.avg;
+                return Float.compare(std2Avg, std1Avg);
+            }
+        });
+    }
+
+    private static void printRank(Student[] std) {
+        System.out.println("[전체 석차]");
+        for (int i = 0; i < std.length; i++) {
+            System.out.printf(i + 1 + "등: " + std[i].name + ", %.2f 점\n", std[i].avg);
+        }
     }
 
     private static void printGrade(Student std) {
@@ -108,7 +130,8 @@ public class Homework_Score_이동훈 {
     }
 
     private static void printMember(Student std) {
-        System.out.println("[성적표]\n이름: " + std.name + ", 국어점수: " + std.kor + ", 영어점수: " + std.eng + ", 전산점수: " + std.com);
+        System.out
+                .println("[성적표]\n이름: " + std.name + ", 국어점수: " + std.kor + ", 영어점수: " + std.eng + ", 전산점수: " + std.com);
         System.out.printf("평균점수: %.2f\n", (float) (std.kor + std.eng + std.com) / 3);
     }
 }
