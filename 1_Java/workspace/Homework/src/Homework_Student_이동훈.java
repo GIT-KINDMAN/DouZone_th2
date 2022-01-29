@@ -28,7 +28,7 @@ public class Homework_Student_이동훈 {
         execute();
     }
 
-    private static void execute() {
+    private static void execute() throws Exception {
         Scanner sc = new Scanner(System.in);
         System.out.print("--------------------------------------------------------\n몇 명의 학생을 입력하시겠습니까?: ");
         int N = sc.nextInt();
