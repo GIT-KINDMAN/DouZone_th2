@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Homework_Stars_이동훈 {
 
-    static int i, j, k;
+    static int i, j;
     static int N, select;
     static boolean flag = true;
 
