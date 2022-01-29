@@ -28,7 +28,7 @@ public class Homework_Student_이동훈 {
         execute();
     }
 
-    private static void execute() throws Exception {
+    private static void execute() {
         Scanner sc = new Scanner(System.in);
         System.out.print("--------------------------------------------------------\n몇 명의 학생을 입력하시겠습니까?: ");
         int N = sc.nextInt();
@@ -36,6 +36,15 @@ public class Homework_Student_이동훈 {
 
         Student[] std = new Student[N];
 
+        input(sc, std, N);
+
+        studentSort(std);
+        printRank(std);
+
+        sc.close();
+    }
+
+    private static void input(Scanner sc, Student[] std, int N) {
         for (int i = 0; i < N; i++) {
 
             System.out.print((i + 1) + "번 학생\n이름: ");
@@ -47,6 +56,7 @@ public class Homework_Student_이동훈 {
 
             boolean flag = true;
             while (flag) {
+
                 flag = false;
 
                 System.out.print("국어: ");
@@ -61,6 +71,7 @@ public class Homework_Student_이동훈 {
                 if ((0 > kor || kor > 100) || (0 > eng || eng > 100) || (0 > com || com > 100)) {
                     System.out.println(
                             "--------------------------------------------------------\n유효한 점수를 다시 입력하시오.\n--------------------------------------------------------");
+                    System.out.println((i + 1) + "번 학생\n이름: " + name);
                     flag = true;
                 }
             }
@@ -76,11 +87,6 @@ public class Homework_Student_이동훈 {
 
             System.out.println("========================================================");
         }
-
-        studentSort(std);
-        printRank(std);
-
-        sc.close();
     }
 
     private static void studentSort(Student[] std) {
@@ -128,8 +134,14 @@ public class Homework_Student_이동훈 {
     private static void printFail(Student std) {
         float avg = (std.kor + std.eng + std.com) / 3;
 
-        if (std.kor < 40 || std.eng < 40 || std.com < 40 || avg < 60) {
-            System.out.println("불합격");
+        if (std.kor < 40) {
+            System.out.println("불합격 [사유: 과락-'국어']");
+        } else if (std.eng <40 ){
+            System.out.println("불합격 [사유: 과락-'영어']");
+        } else if (std.com <40) {
+            System.out.println("불합격 [사유: 과락-'전산']");
+        } else if (avg<60) {
+            System.out.println("불합격 [사유: 평균 점수 미달]");
         } else {
             System.out.println("합격");
         }
