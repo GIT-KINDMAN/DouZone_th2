@@ -1,5 +1,6 @@
 package ex04.sort;
 
+import java.util.Arrays;
 public class ArraysSortTest {
     public static void main(String[] args) {
         int[] a =  {7, 3, 5, 2, 8};
@@ -11,7 +12,7 @@ public class ArraysSortTest {
 
         // Sort
         System.out.println("\n오름차순");
-        Arryas.sort(a);
+        Arrays.sort(a);
 
 
 

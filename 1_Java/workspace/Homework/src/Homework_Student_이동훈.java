@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Comparator;
 import java.util.Arrays;
 
-class Student implements Comparable<Student> {
+class Student {
 
     String name;
     int kor;
@@ -15,11 +15,6 @@ class Student implements Comparable<Student> {
         this.kor = kor;
         this.eng = eng;
         this.com = com;
-    }
-
-    @Override
-    public int compareTo(Student std) {
-        return (int) (std.avg - this.avg);
     }
 }
 
@@ -81,7 +76,7 @@ public class Homework_Student_이동훈 {
 
             System.out.println("--------------------------------------------------------");
 
-            printMember(std[i]);
+            printOutput(std[i]);
             printGrade(std[i]);
             printFail(std[i]);
 
@@ -93,9 +88,7 @@ public class Homework_Student_이동훈 {
         Arrays.sort(std, new Comparator<Student>() {
             @Override
             public int compare(Student std1, Student std2) {
-                float std1Avg = std1.avg;
-                float std2Avg = std2.avg;
-                return Float.compare(std2Avg, std1Avg);
+                return Float.compare(std2.avg, std1.avg);
             }
         });
     }
@@ -108,10 +101,9 @@ public class Homework_Student_이동훈 {
     }
 
     private static void printGrade(Student std) {
-        int avg = (std.kor + std.eng + std.com) / 3;
 
         String grade = "";
-        switch (avg / 10) {
+        switch ((int)std.avg / 10) {
             case 10:
             case 9:
                 grade = "A";
@@ -132,24 +124,22 @@ public class Homework_Student_이동훈 {
     }
 
     private static void printFail(Student std) {
-        float avg = (std.kor + std.eng + std.com) / 3;
-
         if (std.kor < 40) {
             System.out.println("불합격 [사유: 과락-'국어']");
         } else if (std.eng <40 ){
             System.out.println("불합격 [사유: 과락-'영어']");
         } else if (std.com <40) {
             System.out.println("불합격 [사유: 과락-'전산']");
-        } else if (avg<60) {
+        } else if (std.avg<60) {
             System.out.println("불합격 [사유: 평균 점수 미달]");
         } else {
             System.out.println("합격");
         }
     }
 
-    private static void printMember(Student std) {
+    private static void printOutput(Student std) {
         System.out
                 .printf("[성적표]\n이름: " + std.name + ", 국어점수: " + std.kor + ", 영어점수: " + std.eng + ", 전산점수: " + std.com
-                        + "\n평균점수: %.2f\n", (float) (std.kor + std.eng + std.com) / 3);
+                        + "\n평균점수: %.2f\n", std.avg);
     }
 }
