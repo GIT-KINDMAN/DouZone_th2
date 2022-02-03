@@ -1,3 +1,5 @@
+package ex06.oop;
+
 class Point {
     private int x,y;
 
@@ -22,13 +24,12 @@ class Point {
     
 }
 
-public class Test {
+public class MainEntry {
     public static void main(String[] args) {
         Point pt = new Point();
 
         pt.setX(90);
         pt.setY(80);
-        pt.disp();
-        //System.out.println(pt.getX()+", "+pt.getY());
+        System.out.println(pt.getX()+", "+pt.getY());
     }
 }
