@@ -72,6 +72,5 @@ public class Quiz_Info {
 
     // sub, mul: return 타입 적용
     // try catch: div
-}
 
 
