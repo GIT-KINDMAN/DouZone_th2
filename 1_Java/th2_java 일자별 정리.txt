@@ -61,6 +61,10 @@ https://www.youtube.com/watch?v=lyZQPjUT5B4&t=6s
    출력 함수 output( ) - 결과 출력하는 함수 
 
  > overload(중복함수)
+ 함수명은 같고, 매개변수의 개수가 다르거나
+ 매개변수의 개수가 같다면 자료형이 다른 함수 
+
+  cf) override 
 
  > 가변길이 함수 
 
