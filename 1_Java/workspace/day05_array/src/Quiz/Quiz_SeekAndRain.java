@@ -2,7 +2,7 @@
  * 문제1] int[] a = {1,7,5,7,2,8,7,9,12,5,7,99} -> int seek=7 일때 return 7's count
  * 문제2] 기상청: 1월의 평균 강수량 구하는 프로그램 작성 ( 단, 30일 기준) -> int[] arr = new int[30];
  */
-package quiz;
+package Quiz;
 
 public class Quiz_SeekAndRain {
 
