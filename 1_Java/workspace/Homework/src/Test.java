@@ -1,5 +1,7 @@
 public class Test {
     public static void main(String[] args) {
+        plus("A","B");
+        plus("kbs","mbc","KOSA");
         plus(3);
         plus(1,2,3,4,5,5,6,8);
         plus(100,20);
@@ -15,10 +17,11 @@ public class Test {
         //System.out.println(x+"["+i+"]= "+sum);
     }
 
-    // private static void plus(int i, int j) {
-    // }
-    // private static void plus(int i, int j, int k, int l, int m, int n, int o, int p) {
-    // }
-    // private static void plus(int i) {
-    // }
+    private static void plus(String... x) {
+        String str = "";
+        for(int i=0; i<x.length; i++)  {
+            str += x[i];
+        }
+        System.out.println(str);
+    }
 }
