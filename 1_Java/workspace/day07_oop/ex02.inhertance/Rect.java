@@ -20,6 +20,8 @@ public class Rect extends Point { // Sub
     }
 
     public void disp() {
-        System.out.println("x: " + x + "\ty: " + y+"\ttx2: "+x2+"\ty2: "+y2 );
+        super.disp();
+        System.out.println("\tx2: "+x2+"\ty2: "+y2);
+        //System.out.println("x: " + x + "\ty: " + y+"\ttx2: "+x2+"\ty2: "+y2 );
     }
 }
