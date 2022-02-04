@@ -4,26 +4,20 @@ import java.util.Arrays;
 
 class Student {
 
-    String name;
-    int kor;
-    int eng;
-    int com;
-    float avg;
+    private String name;
+    private int kor;
+    private int eng;
+    private int com;
+    private float avg;
 
-    public Student(String name, int kor, int eng, int com) {
+    private Student(String name, int kor, int eng, int com) {
         this.name = name;
         this.kor = kor;
         this.eng = eng;
         this.com = com;
     }
-}
 
-public class Homework_Student_이동훈 {
-    public static void main(String[] args) throws Exception {
-        execute();
-    }
-
-    private static void execute() throws Exception {
+    protected static void execute() throws Exception {
         Scanner sc = new Scanner(System.in);
         System.out.print("--------------------------------------------------------\n몇 명의 학생을 입력하시겠습니까?: ");
         int N = sc.nextInt();
@@ -141,5 +135,12 @@ public class Homework_Student_이동훈 {
         System.out
                 .printf("[성적표]\n이름: " + std.name + ", 국어점수: " + std.kor + ", 영어점수: " + std.eng + ", 전산점수: " + std.com
                         + "\n평균점수: %.2f\n", std.avg);
+    }
+
+}
+
+public class Homework_Student_이동훈 {
+    public static void main(String[] args) throws Exception {
+        Student.execute();
     }
 }
