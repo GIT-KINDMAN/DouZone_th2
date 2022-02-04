@@ -27,8 +27,7 @@ public class Circle {
         this.r = r;
     }
 
-    @Override
-    public String toString() {
-        return x+y+r^2;
+    public void disp() {
+        System.out.println("x: " + x + "\ty: " + y);
     }
 }

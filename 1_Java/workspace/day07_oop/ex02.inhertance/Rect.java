@@ -1,17 +1,25 @@
 public class Rect extends Point { // Sub
 
-    private int r;
+    private int x2;
+    private int y2;
 
-    public int getR() {
-		return this.r;
-	}
+    public int getX2() {
+        return this.x2;
+    }
 
-    public void setR(int r) {
-        this.r = r;
+    public void setX2(int x2) {
+        this.x2 = x2;
+    }
+
+    public int getY2() {
+        return this.y2;
+    }
+
+    public void setY2(int y2) {
+        this.y2 = y2;
     }
 
     public void disp() {
-        System.out.println("x: " + x + "\ty: " + y);
+        System.out.println("x: " + x + "\ty: " + y+"\ttx2: "+x2+"\ty2: "+y2 );
     }
-    
 }
